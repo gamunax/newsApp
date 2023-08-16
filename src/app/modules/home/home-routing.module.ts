@@ -17,13 +17,6 @@ const routes: Routes = [
         loadChildren: () =>
           import('./pages/news/news.module').then(m => m.NewsModule),
       },
-      {
-        path: 'news-detail/:id',
-        loadChildren: () =>
-          import('./pages/news-detail/news-detail.module').then(
-            m => m.NewsDetailModule
-          ),
-      },
     ],
   },
 ];

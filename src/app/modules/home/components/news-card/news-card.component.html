@@ -1,25 +1,41 @@
 <article class="container-card">
   <div class="container-card-header">
-    <img
-      class="container-card-header__image"
-      [src]="article.urlToImage"
-      width="100%"
-      alt="news" />
+    <a [href]="article.url" target="_blank">
+      <img
+        class="container-card-header__image"
+        [src]="article.urlToImage"
+        width="100%"
+        alt="news" />
+    </a>
   </div>
+
   <div class="container-card-body">
     <h2 class="container-card-body__title">
-      {{ article.title }}
+      <a
+        [href]="article.url"
+        target="_blank"
+        class="container-card-body__title__link">
+        {{ article.title }}
+      </a>
     </h2>
     <p class="container-card-body__description">
-      {{ article.description }}
+      <a
+        [href]="article.url"
+        class="container-card-body__title__link"
+        target="_blank">
+        {{ article.description }}
+      </a>
     </p>
   </div>
+
   <div class="container-card-author">
     <div class="container-card-author__avatar">
       <img src="./assets/icons/avatar.png" alt="avatar" width="44px" />
     </div>
     <div class="container-card-author-data">
-      <p class="container-card-author-data__name">{{ article.author }}</p>
+      <p class="container-card-author-data__name">
+        {{ article.author || 'Anónimo' }}
+      </p>
       <p class="container-card-author-data__date">{{ article.publishedAt }}</p>
     </div>
   </div>
