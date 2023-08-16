@@ -1,6 +1,8 @@
 <div class="container-news">
   <h1 class="container-news__title">Noticias</h1>
   <div class="container-news-cards">
-    <app-news-card></app-news-card>
+    <ng-container *ngFor="let article of (news$ | async)?.articles">
+      <app-news-card [article]="article"></app-news-card>
+    </ng-container>
   </div>
 </div>
