@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home.component';
 
 const routes: Routes = [
   {
@@ -9,15 +10,21 @@ const routes: Routes = [
   },
   {
     path: 'news',
-    loadChildren: () =>
-      import('./pages/news/news.module').then(m => m.NewsModule),
-  },
-  {
-    path: 'news-detail/:id',
-    loadChildren: () =>
-      import('./pages/news-detail/news-detail.module').then(
-        m => m.NewsDetailModule
-      ),
+    component: HomeComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./pages/news/news.module').then(m => m.NewsModule),
+      },
+      {
+        path: 'news-detail/:id',
+        loadChildren: () =>
+          import('./pages/news-detail/news-detail.module').then(
+            m => m.NewsDetailModule
+          ),
+      },
+    ],
   },
 ];
 
