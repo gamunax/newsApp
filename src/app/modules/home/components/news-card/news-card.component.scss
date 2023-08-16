@@ -1,0 +1,64 @@
+@import 'abstracts/colors/colors.scss';
+
+.container-card {
+  border-radius: 12px;
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.07);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.container-card-header {
+  &__image {
+    border-radius: 12px;
+  }
+}
+
+.container-card-body {
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: $text-color-black-coffee;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 16px 0;
+    white-space: nowrap;
+  }
+
+  &__description {
+    font-size: 14px;
+    color: $text-color-black-coffee;
+    opacity: 0.75;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    white-space: pre-wrap;
+  }
+}
+
+.container-card-author {
+  align-items: center;
+  background-color: $background-color-cultured;
+  border-radius: 12px;
+  display: flex;
+  padding: 8px 16px;
+}
+
+.container-card-author-data {
+  margin-left: 10px;
+
+  &__name {
+    color: $text-color-black-coffee;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &__date {
+    font-size: 12px;
+    color: $text-color-black-coffee;
+    margin: 0;
+    padding-top: 4px;
+    opacity: 0.75;
+  }
+}

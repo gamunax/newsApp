@@ -1,0 +1,9 @@
+@import 'abstracts/colors/colors.scss';
+
+.container-news {
+  &__title {
+    color: $text-color-black-coffee;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

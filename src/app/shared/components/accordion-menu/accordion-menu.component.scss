@@ -2,19 +2,22 @@
 
 .container-accordion-menu {
   position: absolute;
-  width: 90%;
+  width: 100%;
   background-color: $background-color-white;
   -webkit-font-smoothing: antialiased;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   height: 100vh;
+  left: 0;
   top: 0;
   padding-top: 16px;
+  z-index: 1;
 }
 
 .container-accordion-header {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  padding: 0 16px;
 
   &__title {
     color: $text-color-giants-orange;
@@ -41,6 +44,6 @@
   padding: 0;
 
   &__li {
-    padding: 15px 0;
+    padding: 15px 16px;
   }
 }
