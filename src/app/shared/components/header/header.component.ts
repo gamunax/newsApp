@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NewsService } from '@home/services';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   isOpenMenu = false;
+
+  constructor(private _newsService: NewsService) {}
+
+  searchNews(value: string): void {
+    this._newsService
+      .getSearchNews(value)
+      .subscribe(news => this._newsService.news$.next(news));
+  }
 }
