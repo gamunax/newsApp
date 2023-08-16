@@ -21,7 +21,8 @@
     "useDefineForClassFields": false,
     "lib": ["ES2022", "dom"],
     "paths": {
-      "@shared/components": ["src/app/shared/components/index.ts"]
+      "@shared/components": ["src/app/shared/components/index.ts"],
+      "@home/components": ["src/app/modules/home/components/index.ts"]
     }
   },
   "angularCompilerOptions": {
