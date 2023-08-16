@@ -20,4 +20,12 @@ export class NewsService {
     };
     return this._httpClient.get<News>(this.API_URL, { params });
   }
+
+  getSearchNews(search: string): Observable<News> {
+    const params = {
+      q: search,
+      apiKey: environment.newsApiKey,
+    };
+    return this._httpClient.get<News>(this.API_URL, { params });
+  }
 }

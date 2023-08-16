@@ -1,9 +1,14 @@
 @import 'abstracts/colors/colors.scss';
+@import 'abstracts/mixins';
 
 .container-header {
   align-items: center;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+
+  @include mobile {
+    justify-content: flex-start;
+  }
 }
 
 .container-menu-toggle {
@@ -20,6 +25,7 @@
   padding: 14px;
   position: relative;
   width: 100%;
+  max-width: 399px;
 
   &__input {
     background-color: $background-color-cultured;
@@ -33,4 +39,35 @@
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.container-menu-toggle {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.container-nav {
+  display: block;
+  margin-right: 16px;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.container-nav-ul {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  gap: 34px;
+  padding-left: 0;
+
+  &__home {
+    color: $text-color-giants-orange;
+    font-size: 22px;
+    font-weight: 700;
+  }
 }

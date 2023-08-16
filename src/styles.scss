@@ -1,9 +1,10 @@
 @import 'abstracts/colors/colors.scss';
+@import 'abstracts/mixins';
 
 /* You can add global styles to this file, and also import other style files */
 body {
   background-color: $background-color-white;
-  padding: 8px;
+  padding: 45px 24px 0;
   font-family:
     Roboto,
     system-ui,
@@ -17,10 +18,17 @@ body {
     'Open Sans',
     'Helvetica Neue',
     sans-serif;
+  max-width: 1491px;
+  margin: 0 auto;
+
+  @include mobile {
+    padding: 16px;
+  }
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     text-decoration: underline;
