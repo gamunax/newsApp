@@ -1,0 +1,18 @@
+<div class="container-accordion-menu" *ngIf="isOpenMenu">
+  <div class="container-accordion-header">
+    <div class="container-accordion-header__title">Fudo.news</div>
+    <button
+      class="container-accordion-close"
+      type="button"
+      (click)="closeMenu.emit(false)">
+      <img src="./assets/icons/close.png" alt="close" />
+    </button>
+  </div>
+
+  <nav role="navigation" class="container-nav">
+    <ul class="container-nav-ul">
+      <li class="container-nav-ul__li">Home</li>
+      <li class="container-nav-ul__li">Sports</li>
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,46 @@
+@import 'abstracts/colors/colors.scss';
+
+.container-accordion-menu {
+  position: absolute;
+  width: 90%;
+  background-color: $background-color-white;
+  -webkit-font-smoothing: antialiased;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  height: 100vh;
+  top: 0;
+  padding-top: 16px;
+}
+
+.container-accordion-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    color: $text-color-giants-orange;
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+
+.container-accordion-close {
+  border-style: none;
+  padding: 0;
+  border-radius: 12px;
+  height: 48px;
+  width: 48px;
+}
+
+.container-nav {
+  padding-top: 5px;
+}
+
+.container-nav-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__li {
+    padding: 15px 0;
+  }
+}

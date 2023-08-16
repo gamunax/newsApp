@@ -1,0 +1,36 @@
+@import 'abstracts/colors/colors.scss';
+
+.container-header {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container-menu-toggle {
+  background-color: $background-color-cultured;
+  border-style: none;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.container-search {
+  background-color: $background-color-cultured;
+  margin-left: 10px;
+  border-radius: 12px;
+  padding: 14px;
+  position: relative;
+  width: 100%;
+
+  &__input {
+    background-color: $background-color-cultured;
+    border: 1px solid $background-color-cultured;
+    outline: none;
+  }
+}
+
+.container-search-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
