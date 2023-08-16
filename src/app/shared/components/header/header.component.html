@@ -5,6 +5,20 @@
     (click)="isOpenMenu = !isOpenMenu">
     <img src="./assets/icons/icon.png" alt="menu" />
   </button>
+
+  <nav role="navigation" class="container-nav">
+    <ul class="container-nav-ul">
+      <li class="container-nav-ul__li container-nav-ul__home">
+        <a routerLink="/">Fudo.news</a>
+      </li>
+      <li class="container-nav-ul__li">
+        <a routerLink="/">Inicio</a>
+      </li>
+      <li class="container-nav-ul__li">Categorias</li>
+      <li class="container-nav-ul__li">Nosotros</li>
+    </ul>
+  </nav>
+
   <div class="container-search">
     <input type="text" class="container-search__input" placeholder="Buscar" />
     <div class="container-search-icon">

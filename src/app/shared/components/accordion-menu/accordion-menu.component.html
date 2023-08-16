@@ -1,6 +1,8 @@
 <div class="container-accordion-menu" *ngIf="isOpenMenu">
   <div class="container-accordion-header">
-    <div class="container-accordion-header__title">Fudo.news</div>
+    <div class="container-accordion-header__title">
+      <a routerLink="/">Fudo.news</a>
+    </div>
     <button
       class="container-accordion-close"
       type="button"
@@ -11,8 +13,11 @@
 
   <nav role="navigation" class="container-nav">
     <ul class="container-nav-ul">
-      <li class="container-nav-ul__li">Home</li>
+      <li class="container-nav-ul__li">
+        <a routerLink="/">Inicio</a>
+      </li>
       <li class="container-nav-ul__li">Sports</li>
+      <li class="container-nav-ul__li">Nosotros</li>
     </ul>
   </nav>
 </div>
