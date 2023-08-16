@@ -6,3 +6,7 @@
     </ng-container>
   </div>
 </div>
+
+<div *ngIf="(news$ | async)?.articles?.length === 0">
+  <h1 class="container-news__title">No se encontraron noticias</h1>
+</div>

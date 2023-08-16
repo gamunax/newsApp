@@ -20,13 +20,22 @@
   </nav>
 
   <div class="container-search">
-    <input type="text" class="container-search__input" placeholder="Buscar" />
-    <div class="container-search-icon">
+    <input
+      #search
+      type="text"
+      class="container-search__input"
+      placeholder="Buscar"
+      (keydown.enter)="searchNews(search.value)" />
+
+    <button
+      class="container-search-button"
+      type="button"
+      (click)="searchNews(search.value)">
       <img
-        class="container-search-icon__image"
+        class="container-search-button__image"
         src="./assets/icons/search.png"
         alt="search-icon" />
-    </div>
+    </button>
   </div>
 </header>
 

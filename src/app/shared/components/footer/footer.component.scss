@@ -7,11 +7,6 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 24px 0;
-
-  @include tablet {
-    padding: 16px 0;
-  }
 
   &__home {
     color: $text-color-giants-orange;
@@ -24,11 +19,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1491px;
   max-width: 1491px;
-  margin: 0 auto;
+  padding: 16px;
 
-  @include desktop {
+  @include tablet {
     width: 100%;
     max-width: 100%;
     justify-content: center;
@@ -38,7 +32,7 @@
 .container-footer-copyright {
   display: block;
 
-  @include desktop {
+  @include tablet {
     display: none;
   }
 }
