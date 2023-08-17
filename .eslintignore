@@ -1,5 +1,0 @@
-node_modules
-.husky
-**/src/**/*.spec.ts
-.eslintrc.json
-
