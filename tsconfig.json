@@ -23,6 +23,7 @@
     "lib": ["ES2022", "dom"],
     "paths": {
       "@shared/components": ["src/app/shared/components/index.ts"],
+      "@shared/pipes": ["src/app/shared/pipes/pipes.module.ts"],
       "@home/components": ["src/app/modules/home/components/index.ts"],
       "@home/services": ["src/app/modules/home/services/index.ts"],
       "@home/models": ["src/app/modules/home/models/index.ts"],

@@ -36,7 +36,7 @@
       <p class="container-card-author-data__name">
         {{ article.author || 'Anónimo' }}
       </p>
-      <p class="container-card-author-data__date">{{ article.publishedAt }}</p>
+      <p class="container-card-author-data__date">{{ article.publishedAt | datelatam }}</p>
     </div>
   </div>
 </article>

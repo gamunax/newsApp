@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DatelatamPipe } from './shared/pipes/datelatam.pipe';
 
 @NgModule({
   declarations: [AppComponent],
