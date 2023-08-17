@@ -1,27 +1,62 @@
-# NewsApp
+# Angular 15 News App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.8.
+News application using newsAPI
 
-## Development server
+--
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Considerations
 
-## Code scaffolding
+This project utilizes eslint, git-cz, and husky to ensure proper formatting and pre-commit practices
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Pre-requeriments 📋
 
-## Build
+_This demo has the following environment_
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+NodeJS 16.20.2
+npm 8.19.4
+Angular CLI 15.2.9
+```
 
-## Running unit tests
+### Installation 🔧
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+_Installation of dependencies (node_modules)_
 
-## Running end-to-end tests
+```
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+_Local deploy_
 
-## Further help
+```
+ng serve or npm start
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+_Test deploy_
+
+```
+ng test
+```
+
+_This is what it would look like when run_
+
+Desktop:
+![news-app](https://i.ibb.co/KNcmNtJ/Screenshot-from-2023-08-16-19-26-42.png)
+
+Tablet:
+![news-app](https://i.ibb.co/HN4CWMb/Screenshot-from-2023-08-16-19-28-48.png)
+
+Mobile:
+![news-app](https://i.ibb.co/dsvKn3D/Screenshot-from-2023-08-16-19-29-53.png)
+
+_This is what it would look like when run test_
+
+![test](https://i.ibb.co/FYxDdR1/Screenshot-from-2023-08-16-19-22-47.png)
+
+## Build with 🛠️
+
+- [Angular](https://angular.io/) - El framework web usado
+
+## Autor ✒️
+
+- **Jan Pierre Sánchez**
