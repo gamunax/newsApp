@@ -18,6 +18,8 @@ describe('HeaderComponent', () => {
           provide: NewsService,
           useValue: {
             getNews: () => of({}),
+            getSearchNews: () => of({}),
+            news$: { next: () => {} },
           },
         },
       ],
@@ -30,5 +32,16 @@ describe('HeaderComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  describe('#searchNews', () => {
+    it('should call the service with the correct parameters', () => {
+      const newsService = TestBed.inject(NewsService);
+      const spy = spyOn(newsService, 'getSearchNews').and.callThrough();
+
+      component.searchNews('test');
+
+      expect(spy).toHaveBeenCalledWith('test');
+    });
   });
 });

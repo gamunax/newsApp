@@ -47,4 +47,27 @@ describe('NewsService', () => {
       req.flush(mockResponse);
     });
   });
+
+  describe('#getSearchNews', () => {
+    it('should make a GET request to the News API with the correct parameters', () => {
+      const mockResponse: News = {
+        status: 'ok',
+        totalResults: 1,
+        articles: [],
+      };
+
+      service.getSearchNews('test').subscribe(news => {
+        expect(news).toEqual(mockResponse);
+      });
+
+      const req = httpMock.expectOne(
+        `${service.API_URL}?q=test&apiKey=${environment.newsApiKey}`
+      );
+      expect(req.request.method).toBe('GET');
+      expect(req.request.params.get('q')).toBe('test');
+      expect(req.request.params.get('apiKey')).toBe(environment.newsApiKey);
+
+      req.flush(mockResponse);
+    });
+  });
 });
