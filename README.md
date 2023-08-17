@@ -2,14 +2,12 @@
 
 News application using newsAPI
 
-locallhost: it work well.
-gh-pages: Requests from the browser are not allowed on the Developer plan, except from localhost.
-
 --
 
 ## Considerations
 
 - This project utilizes eslint, git-cz, and husky to ensure proper formatting and pre-commit practices.
+- newApi has a restriction, only the api can be used locally, However I have created a mock in case the api fails in gh-pages
 
 ## Pre-requeriments 📋
 
